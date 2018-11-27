@@ -13,8 +13,19 @@ app.get('/', (req, res) => {
 })
 
  /* 
+ PART 1 ANSWERS
  
 Query this database: db.employinfo.find().pretty();
+
+db.employinfo.find({"salary":{$gt:"7000"}}).pretty();
+db.employinfo.find().("$orderby",{"salary":-1}).pretty();
+db.employinfo.find().("$orderby",{"salary":1}).pretty()'
+db.employinfo.count({ "salary":{'$gt':"5000",'$lt':"40000"}}).pretty();
+db.employinfo.find({"designation":{$ne:"Developer"}}).pretty();
+db.employinfo.find({$or:[{"city":"Singapore"},{"salary":{$gt:"8000"}}]}).pretty();
+db.employinfo.remove({"ename":"Rice Time"},1);
+
+
 
 
 */
