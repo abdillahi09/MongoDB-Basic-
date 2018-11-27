@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
  /* 
- PART 1 ANSWERS
+ ANSWERS COMMENTS
  
 Query this database: db.employinfo.find().pretty();
 
